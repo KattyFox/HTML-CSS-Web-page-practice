@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index1.css">
+    <link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <title></title>
+</head>
+<body>
+	<header>
+        <div class="header">
+        <img class="logo" src="./pics/logo.png">
+        <div>
+            <a href="#" class="city">New York</a>
+            <i class="fa fa-angle-down"></i>
+            <i class="fa fa-bell"></i>
+            <i class="fa fa-envelope"></i>
+            <a href="#" class="user-link">User name<img class="user-photo" src="./pics/userPhoto.jpg"></a>
+            <form action="javascript:void()" onsubmit="if(this.t1.value!=null && this.t1.value!='')parent.findString(this.t1.value);return false;">
+                <input type="text" class="toggleMin" id="t1" placeholder="Search ...">
+            </form>
+            <i class="fa fa-search" onclick="slideMin()"></i>
+        </div>
+        </div>
+
+
+        <!-- <div class="headerMin"></div> -->
+    </header>
+
+    <div class="nav">
+        <nav class="nav1">
+			<a href="#">Menu item</a>
+			<a href="#">Menu item</a>
+			<a href="#">Menu item</a>
+			<a href="#">Menu item</a>
+			<a href="#">Menu item</a>
+		</nav>
+        <!-- <nav class="mobileMenu"></nav> -->
+    </div>
+    <div class="main">
+        <menu class="menu">
+			<li><a href="#">Submenu item 7d</a></li>
+			<li><a href="#">Submenu item 5d</a></li>
+			<li class="submenu">Submenu</li>
+			<li><a href="#">Submenu item 7d</a></li>
+			<li><a href="#">Submenu item 2d</a></li>
+			<li><a href="#">Submenu item 4d</a></li>
+			<li><a href="#">More tags</a></li>
+			<li class="submenu">Submenu</li>
+			<li><a href="#">Submenu item 1d</a></li>
+			<li><a href="#">Submenu item 1d</a></li>
+			<li class="submenu">Submenu</li>
+			<li><a href="#">Submenu item 4d</a></li>
+			<li><a href="#">Submenu item 2d</a></li>
+			<li><a href="#">Submenu item1 &amp; Submenu item2 2d</a></li>
+			<li><a href="#">Submenu item 7d</a></li>
+			<li><a href="#">Submenu item 1d</a></li>
+			<li><a href="#">Submenu item 1d</a></li>
+			<li class="submenu">Submenu</li>
+			<li><a href="#">Submenu item 2d</a></li>
+			<li><a href="#">Submenu item 1d</a></li>
+			<li><a href="#">Submenu item 3d</a></li>
+		</menu>
+        <div class="content">
+            <h1>Page title in <span>New York </span>
+                <i class="fa fa-angle-down"></i>
+            </h1>
+            <div class="form">
+				<!-- <form action="javascript:void()" onsubmit="if(this.t1.value!=null && this.t1.value!='')parent.findString(this.t1.value);return false;"> -->
+
+                <form action="javascript:void()" onsubmit="if(this.t1.value!=null && this.t1.value!='')parent.findString(this.t1.value);return false;">
+                    <input type="text" id="t1" placeholder="Search ...">
+                </form>
+
+				<div class="item">
+					<span>+ New item</span>
+					<i class="fa fa-sliders"></i>
+				</div>
+			</div>
+            <!-- <div class="formMin"></div> -->
+            <div class="post">
+				<div class="image"><img src="./pics/pic1.jpeg"></div>
+				<div class="postCont">
+					<span>User name</span>
+					<span class="member">Pro</span>
+					<span class="comments"><i class="fa fa-comments"></i><span> 2 </span><i class="fa fa-clock-o"></i> 20m</span>
+					<p class="title">Item title 1</p>
+					<p class="text">Suspendisse potenti. Duis imperdiet ex non leo condimentum efficitur. Sed rhoncus eleifend lacus sit amet faucibus. Nunc semper nisl a dolor pretium dapibus quis quis lacus. Nulla faucibus viverra laoreet. Fusce in scelerisque magna. Duis porta erat vitae lectus lacinia tempus.</p>
+					<span class="tags"><i class="fa fa-tag"></i> tag1, tag2, tag3</span>
+				</div>
+			</div>
+            <div class="post">
+				<div class="image"><img src="./pics/pic2.jpeg"></div>
+				<div class="postCont">
+					<span>User name</span>
+					<span class="member">Pro</span>
+					<span class="comments"><i class="fa fa-comments"></i><span> 2 </span><i class="fa fa-clock-o"></i> 20m</span>
+					<p class="title">Item title 2</p>
+					<p class="text">Suspendisse potenti. Duis imperdiet ex non leo condimentum efficitur. Sed rhoncus eleifend lacus sit amet faucibus. Nunc semper nisl a dolor pretium dapibus quis quis lacus. Nulla faucibus viverra laoreet. Fusce in scelerisque magna. Duis porta erat vitae lectus lacinia tempus.</p>
+					<span class="tags"><i class="fa fa-tag"></i> tag1, tag2, tag3</span>
+				</div>
+			</div>
+            <div class="post">
+				<div class="image"><img src="./pics/pic3.jpeg"></div>
+				<div class="postCont">
+					<span>User name</span>
+					<span class="member">Pro</span>
+					<span class="comments"><i class="fa fa-comments"></i><span> 3 </span><i class="fa fa-clock-o"></i> 20m</span>
+					<p class="title">Item title 2</p>
+					<p class="text">Suspendisse potenti. Duis imperdiet ex non leo condimentum efficitur. Sed rhoncus eleifend lacus sit amet faucibus. Nunc semper nisl a dolor pretium dapibus quis quis lacus. Nulla faucibus viverra laoreet. Fusce in scelerisque magna. Duis porta erat vitae lectus lacinia tempus.</p>
+					<span class="tags"><i class="fa fa-tag"></i> tag1, tag2, tag3</span>
+				</div>
+			</div>
+            <div class="post">
+				<div class="image"><img src="./pics/pic4.jpeg"></div>
+				<div class="postCont">
+					<span>User name</span>
+					<span class="member">Pro</span>
+					<span class="comments"><i class="fa fa-comments"></i><span> 2 </span><i class="fa fa-clock-o"></i> 20m</span>
+					<p class="title">Item title 4</p>
+					<p class="text">Suspendisse potenti. Duis imperdiet ex non leo condimentum efficitur. Sed rhoncus eleifend lacus sit amet faucibus. Nunc semper nisl a dolor pretium dapibus quis quis lacus. Nulla faucibus viverra laoreet. Fusce in scelerisque magna. Duis porta erat vitae lectus lacinia tempus.</p>
+					<span class="tags"><i class="fa fa-tag"></i> tag1, tag2, tag3</span>
+				</div>
+			</div>
+            <div class="outer">
+				<div class="buttons">
+				   <a href="#" class="button_slide slide_right"><i class="fa fa-angle-left"></i>Previous</a>
+				   <a href="#" class="button_slide slide_left">Next<i class="fa fa-angle-right"></i></a> 
+		   
+			   </div>
+		   </div>
+            <div class="footer">
+				<nav class="nav-footer">
+					<a href="#">About</a>
+					<a href="#">Policies</a>
+					<a href="#">Site map</a>
+					<a href="#">Help</a>
+					<a href="#">Contact us</a>
+				</nav>
+
+				<div class="copyright">
+					<img src="./pics/logo-min.png">
+					<span>© 2015. Qulix Systems. All rights reserved.</span>
+				</div>
+			</div>
+        </div>
+    </div>
+</body>
+</html>
